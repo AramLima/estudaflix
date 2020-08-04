@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import Button from '../Button';
+
+
 
 export const LogoImage = styled.img`
     max-width: 168px;
@@ -12,10 +13,11 @@ export const LogoImage = styled.img`
 export const MenuWrapper = styled.nav`
     width: 100%;
     height: 94px;
-
+    z-index: 1;
+   
     position: fixed;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     padding-left: 5%;
     padding-right: 5%;
     
@@ -24,7 +26,7 @@ export const MenuWrapper = styled.nav`
     align-items: center;
 
     background-color: var(--black);
-    border-bottom: 2px solid var(--primary);
+    border-bottom: 2px solid var(--red);
 
     @media( max-width: 800px){
         height: 40px;
@@ -32,29 +34,3 @@ export const MenuWrapper = styled.nav`
     }
 `;
 
-export const ButtonLink = styled(Button)`
-    color: var(--white);
-    border: 1px solid var(--white);
-    padding: 16px 24px;
-    font-size: 16px;
-    border-radius: 4px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: opacity .3s;
-
-    &:hover,
-    &:focus{
-        opacity: .5
-    }
-
-    @media(max-width: 800px){
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        background: #ff0000;
-        color: var(--white);
-        outline: 0;
-        text-align: center;
-        border: 0;
-    }
-`;

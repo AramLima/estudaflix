@@ -11,10 +11,10 @@ ReactDOM.render(
   
   <BrowserRouter>
     <Switch>
-    <Route path="/" component={Home} exact />
-    <Route path="/cadastro/video" component={CadastroVideo} />
-    <Route path="/cadastro/categoria" component={CadastroCategoria} />
-    <Route component={Pagina404} />
+      <Route path="/" component={Home} exact />
+      <Route path="/cadastro/video" component={CadastroVideo} />
+      <Route path="/cadastro/categoria" component={CadastroCategoria} />
+      <Route component={Pagina404} />
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')
